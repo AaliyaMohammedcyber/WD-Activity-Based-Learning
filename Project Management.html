@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project Management Dashboard</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Summary Cards */
+.summary{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 5px gray;
+}
+
+/* Team Members */
+.team{
+    background:white;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+.members{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.members span{
+    background:#007bff;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+/* Kanban Board */
+.kanban{
+    display:flex;
+    gap:20px;
+}
+
+.column{
+    flex:1;
+    background:white;
+    padding:15px;
+    border-radius:8px;
+}
+
+.task{
+    background:#f9f9f9;
+    padding:12px;
+    border-radius:6px;
+    margin-top:15px;
+    border-left:4px solid #007bff;
+}
+
+.task h4{
+    margin-bottom:8px;
+}
+
+.progress{
+    background:#ddd;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+.fill{
+    background:green;
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:3px;
+}
+</style>
+</head>
+<body>
+<h1>Project Management Dashboard</h1>
+<div class="summary">
+<div class="card">
+<h3>Total Projects</h3>
+<p>5</p>
+</div>
+<div class="card">
+<h3>Total Tasks</h3>
+<p>24</p>
+</div>
+<div class="card">
+<h3>Completed</h3>
+<p>12</p>
+</div>
+<div class="card">
+<h3>Team Members</h3>
+<p>8</p>
+</div>
+</div>
+<div class="team">
+<h2>Team Members</h2>
+<div class="members">
+<span>John</span>
+<span>Emma</span>
+<span>David</span>
+<span>Sophia</span>
+</div>
+</div>
+<div class="kanban">
+<div class="column">
+<h2>To Do</h2>
+<div class="task">
+<h4>Homepage Design</h4>
+<p>Priority: High</p>
+<p>Deadline: 25 Oct</p>
+</div>
+<div class="task">
+<h4>Database Setup</h4>
+<p>Priority: Medium</p>
+<p>Deadline: 28 Oct</p>
+</div>
+</div>
+<div class="column">
+<h2>In Progress</h2>
+<div class="task">
+<h4>Login System</h4>
+<p>Priority: High</p>
+<p>Deadline: 22 Oct</p>
+<div class="progress">
+<div class="fill" style="width:70%">70%</div>
+</div>
+</div>
+</div>
+<div class="column">
+<h2>Done</h2>
+<div class="task">
+<h4>Requirement Analysis</h4>
+<div class="progress">
+<div class="fill" style="width:100%">100%</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
